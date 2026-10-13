@@ -1,16 +1,16 @@
 package com.example;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.Assert.assertTrue;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 /**
- * Unit test for simple App.
+ * Test simple avec JUnit 4.
  */
 public class AppTest {
 
     /**
-     * Rigorous Test :-)
+     * Verification que l'assertion est vraie.
      */
     @Test
     public void shouldAnswerWithTrue() {
