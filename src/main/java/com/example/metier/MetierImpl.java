@@ -3,13 +3,14 @@ package com.example.metier;
 
 import com.example.dao.IDao;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+//import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component("metier") //Declaration de la classe metier comme un bean Spring avec le nom metier
 public class MetierImpl implements IMetier{
 @Autowired // utilisation de l'annotation Autowired pour que Spring injecte automatiquement une implementation de IDao
-@Qualifier("dao2") // on specifie quelle implementation de IDao le metier va utiliser pour l'injection
+//@Qualifier("dao2") //Ancien choix du dao avec Qualifier
+//Avec les profils, un seul dao est actif donc Spring injecte celui du profil choisi
     private IDao dao; // utilisation de l'interface IDao pour pouvoir changer d'implementation sans changer le calcul
 
 @Override
